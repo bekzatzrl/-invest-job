@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+.slider{
+  max-width: 1100px;
+  display: flex;
+  margin-left: 120px;
+ 
+}
+.slider .card{
+  flex: 1;
+  margin: 0 10px;
+  background:#F2BC65;
+  height: 600px;
+  border-radius: 10px;
+}
+.slider .card .img1{
+  height: 200px;
+  width: 100%;
+}
+.slider .card .img1 img{
+    border-radius: 10px 10px 0px 0px;
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+.slider .card .content{
+  padding: 10px 20px;
+}
+.card .content .title1{
+    font-family: 'Poppins',sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+.card .content p{
+  text-align: justify;
+}
+.card .content .btn{
+  display: block;
+  text-align: left;
+  margin: 10px 0;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+section{
+  padding-top: 100px;
+  height: 450px;
+  width: 1300px;
+  display: flex;
+  align-items: center;
+}
+
+.swiper{
+  width: 1100px;
+}
+
+.card{
+  height: 80vh;
+  position: relative;
+  background: #F2BC65;
+  border-radius: 20px;
+  margin: 20px 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card .card-content{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 100;
+}
+section .card .image img{
+  width: 346.50px;
+}
+
+.card .name-profession{
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+ 
+} 
+
+.name-profession .name{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.name-profession .profession{
+  font-size:15px;
+  font-weight: 500;
+}
+
+.swiper-pagination{
+  position: absolute;
+}
+
+.swiper-pagination-bullet{
+  height: 7px;
+  width: 26px;
+  border-radius: 25px;
+  background: #F2BC65;
+}
+
+.swiper-button-next, .swiper-button-prev{
+  opacity: 0.7;
+  color: #7d2ae8;
+  transition: all 0.3s ease;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover{
+  opacity: 1;
+  color: #7d2ae8;
+} */

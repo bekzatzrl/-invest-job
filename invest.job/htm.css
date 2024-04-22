@@ -1,0 +1,789 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.container {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 15px;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    color: #85665C;
+    background: #FFEED3;;
+}
+
+.navbar__wrap {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.hamb {
+  display: none;
+}
+
+.popup {
+  display: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+ .menu{
+    padding-top: 20px;
+    padding-left: 320px;
+ }
+.menu > li > a {
+  text-decoration: none;
+}
+
+.navbar__wrap .menu {
+  display: flex;
+}
+
+.navbar__wrap .menu > li {
+  display: flex;
+  align-items: stretch;
+}
+
+.navbar__wrap .menu > li > a {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  color:#85665C;
+}
+
+.navbar__wrap .menu > li > a:hover {
+  color: rgb(179, 56, 8);
+  transition: 0.65s;
+}
+@media (max-width: 768px) {
+  .navbar__wrap .menu {
+    display: none;
+  }
+  .logo img{
+    padding-left: 600px;
+  }
+  .navbar{
+    height: 60px;
+  }
+  .hamb {
+    display: flex;
+    align-items: center;
+  }
+
+  .hamb__field {
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 6px auto;
+    background-color: #000000;
+    transition: 0.2s;
+  }
+
+  .popup {
+    position: fixed;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 100;
+    display: flex;
+    transition: 0.3s;
+  }
+
+  .popup.open {
+    left: 0;
+  }
+
+  .popup .menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 50px 0;
+    overflow: auto;
+  }
+
+  .popup .menu > li {
+    width: 100%;
+  }
+
+  .popup .menu > li > a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #3f3f3f;
+  }
+
+  .popup .menu > li > a:hover {
+    background-color: rgba(167, 221, 255, 0.541);
+  }
+
+  .hamb__field.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamb__field.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamb__field.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  body.noscroll {
+    overflow: hidden;
+  }
+}
+@media(max-width:425px){
+    .navbar{
+        height: 40px;
+    }
+    .bar{   
+        height: 2px;
+        margin: 4px auto;
+    }
+    .popup{
+        top: 40px;
+    }
+    .logo img{
+        padding-left: 250px;
+    }
+}
+@media(max-width:375px){
+    .logo img{
+
+        padding-left: 220px;
+    }
+}
+.glavnay{
+    background: url('/Poland_main.jpg') no-repeat;
+    background-size: 100%;
+    height: 130vh;
+}
+
+.title{
+    color: white;
+    font-family: 'Open sans', sans-serif;
+    padding-left: 130px;
+    padding-top: 300px;
+}
+.title h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+.title p{
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: 400;
+}
+.title a{
+    color: #FFF;
+    font-size: 18px; 
+    background: #A35D43;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.35);
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.kompaniy{
+    background: linear-gradient(90deg, #FFF -5.81%, #FFEED3 12.81%);
+}
+.kompaniy-title{
+    display: flex;
+    font-family: 'Open sans', sans-serif;
+    padding-left: 130px;
+    padding-top: 150px;
+}
+.kompaniy-title h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+.kompaniy-title p{
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.kompaniy-title a{
+    color: #FFF;
+    font-size: 17px; 
+    background: #A35D43;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.35);
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+.kompaniy-img-425{
+    display: none;
+}
+.kompaniy-img img{
+    width: 450px;
+    border-radius: 20px;
+    margin-left: 160px;
+}
+
+.icon{  
+    padding-top: 70px;
+    padding-left: 130px;
+    gap: 220px;
+    display: flex;
+}
+.i-icon{
+    display: flex;
+    align-items: center;
+}
+.text-center{
+    padding-top: 100px;
+}
+.text-center p{
+    font-size:25px
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+
+#document{
+    background: #dcbfa0;
+    height: 125vh;
+}
+.document-icon{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.document-icon img{
+    width: 100px;
+}
+
+.uslugi{
+    background:#e1caa5 ;
+    height: 100vh;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.uslugi-text {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+    padding-top: 50px;
+}
+
+.uslugi-p{
+    padding-top: 10px;
+    width: 300px;
+    border-radius: 30px;
+    background: rgba(252, 249, 249, 0.33);
+}
+
+.footer-foot{
+    height: 275px;
+    background: #E8C07E;
+}
+.footer{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-menu-logo {
+    display: flex;
+    gap: 20px;
+}
+.footer-text{
+    text-align: center;
+}
+
+@media(max-width: 1024px){
+
+    .glavnay{
+        background: url('/Poland_main.jpg') no-repeat;
+        background-size: 100%;
+        width: 99.90%;
+        height: 89vh;
+    }
+    
+    .title{
+        padding-left: 70px;
+        padding-top: 200px;
+    }
+    .title h1{
+        font-size: 37px;
+        font-weight: 600;
+    }
+    .title p{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .title a{
+        font-size: 15px;
+    }
+
+    .kompaniy-title{
+        padding-left: 70px;
+        padding-top: 120px;
+    }
+    .kompaniy-title h1{
+        font-size: 37px;
+    }
+    .kompaniy-title p{
+        padding-top: 20px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .kompaniy-title a{
+        font-size: 15px;
+    }
+    .kompaniy-title button{
+        margin-top:50px ;
+        width: 250px;
+        height: 40px;
+    }
+    .kompaniy-img img{
+
+        width: 350px;
+    }
+    .icon{
+        padding-left: 70px;
+        gap: 120px;
+        padding-top: 100px;
+    }
+    .icon img{
+        width: 45px;
+    }
+    .icon h4{
+        font-size: 17px;
+    }
+    .icon p{
+        padding-top: 10px;
+        font-size: 15px;
+    }
+    .text-center{
+        padding-top: 80px;
+    }
+    #document{
+        height: 90vh;
+    }
+    .document-icon{
+        padding-top: 40px;
+    }
+    .document-icon img{
+        width: 80px;
+    }
+    .document-icon-text p{
+        font-size: 19px;
+    }
+    .uslugi{
+        height: 70vh;
+    }
+    .uslugi-text {
+        font-size: 15px;
+        gap: 250px;
+        padding-top: 30px;
+    }
+    
+    .uslugi-p{
+        padding-top: 10px;
+        width: 280px;
+        border-radius: 30px;
+    }
+    
+    .footer-foot{
+        height: 275px;
+    }
+    .footer{
+        justify-content: space-around;
+    }
+    .footer-menu-logo {
+        gap: 20px;
+    }
+}
+@media(max-width: 768px){
+    .glavnay{
+        background: url('/Poland_main.jpg') no-repeat;
+        background-size: 100%;
+        width: 99.90%;
+        height: 89vh;
+    }
+    
+    .title{
+        padding-left: 50px;
+        padding-top: 90px;
+    }
+    .title h1{
+        font-size: 28px;
+        font-weight: 600;
+    }
+    .title p{
+        font-size: 17px;
+        font-weight: 400;
+    }
+    .title a{
+        font-size: 13px;
+    }
+    .kompaniy-title{
+        padding-left: 50px;
+    }
+    .kompaniy-title h1{
+        font-size: 28px;
+    }
+    .kompaniy-title p{
+        padding-top: 10px;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .kompaniy-title a{
+        font-size: 15px;
+    }
+    .kompaniy-img img{
+        margin-left: 40px;
+        width: 280px;
+    }
+    .icon{
+        padding-left: 50px;
+        gap: 100px;
+        padding-top: 100px;
+    }
+    .icon img{
+        width: 37px;
+    }
+    .icon h4{
+        font-size: 16px;
+    }
+    .icon p{
+        padding-top: 10px;
+        font-size: 11px;
+    }
+    .text-center{
+        font-size: 22px;
+        padding-top: 50px;
+    }
+    .text-center p{
+        font-size: 15px;
+    }
+    #document{
+        height: 88vh;
+    }
+    .document-icon{
+        padding-top: 40px;
+    }
+    .document-icon img{
+        width: 70px;
+    }
+    .document-icon-text{
+        font-size: 14px;
+    }
+    .uslugi{
+        height: 90vh;
+    }
+    .uslugi h2{
+        padding-top: 0px;
+        font-size: 23px;
+    }
+    .uslugi-text {
+        font-size: 14px;
+        gap: 100px;
+        padding-top: 30px;
+    }
+    
+    .uslugi-p{
+        padding-top: 10px;
+        width: 250px;
+        border-radius: 20px;
+    }
+    
+    .footer-foot{
+        height: 275px;
+    }
+    .footer{
+        justify-content: space-around;
+    }
+    .footer-menu-logo {
+        gap: 20px;
+    }
+}
+@media(max-width: 425px){
+    .glavnay{
+        background: url('/Poland_main.jpg') no-repeat;
+        background-size: 100%   ;
+        width: 100%;
+        height: 49vh;
+    }
+    
+    .title{
+        padding-left: 31px;
+        padding-top: 70px;
+    }
+    .title h1{
+        font-size: 19px;
+        font-weight: 500;
+    }
+    .title p{
+        font-weight:100;
+        padding-top: 5px;
+        font-size: 10.50px;
+    }
+    .title a{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        padding-top: 5px    ;
+        font-size: 9px;
+    }
+    .kompaniy-title{
+        text-align: center;
+        padding-top: 40px;
+        padding-left: 30px;
+    }
+    .kompaniy-title h1{
+        font-size: 22px;
+    }
+    .kompaniy-title p{
+        padding-top: 10px;
+        font-size: 15px;
+    }
+    .kompaniy-title a{
+        font-size: 10px;
+    }
+    .kompaniy-img-425 {
+        padding-bottom: 20px;
+        display:grid;
+    }
+    .kompaniy-img-425 img{
+        margin-left:60px ;
+        width: 250px;
+        border-radius: 10px;
+    }
+    .kompaniy-img img{
+        display: none;
+    }
+    .icon{
+        padding-left: 30px;
+        gap: 20px;
+        padding-top: 60px;
+    }
+    .icon img{
+        width: 23px;
+    }
+    .icon h4{
+        padding-top: 9px;
+        font-size: 13px;
+    }
+    .icon p{
+        padding-top: 10px;
+        font-size: 8px;
+    }
+    .text-center{
+        padding-top: 20px;
+    }
+    .text-center h1{
+        font-size: 25px;
+    }
+    .text-center p{
+        font-size: 12px;
+    }
+    #document{
+        height: 70vh;
+    }
+    .document-icon{
+        padding-top: 40px;
+    }
+    .document-icon img{
+        width: 45px;
+    }
+    .document-icon-text p{
+        font-size: 11px;
+    }
+    .uslugi{
+        padding-top: 15px;
+        height: 70vh;
+    }
+    .uslugi h2{
+        font-size: 20px;
+    }
+    .uslugi-text {
+        font-size: 10px;
+        gap: 100px;
+        padding-top: 30px;
+    }
+    
+    .uslugi-p{
+        padding-top: 10px;
+        width: 250px;
+        border-radius: 20px;
+    }
+    
+    .footer-foot{
+        height: 460px;
+    }
+    .footer{
+        display: block;
+        padding-left: 60px;
+    }
+    .footer-menu{
+        display: flex;
+        gap: 30px;
+    }
+    .footer-menu-logo {
+        gap: 20px;
+    }
+}
+@media(max-width: 375px){
+    /* .logo img{
+        margin-left: 40px;
+        width: 50px;
+        height: 30px;
+    } */
+    .glavnay{
+        background: url('/Poland_main.jpg') no-repeat;
+        background-size: 100%   ;
+        width: 100%;
+        height: 44vh;
+    }
+    
+    .title{
+        padding-left: 31px;
+        padding-top: 70px;
+    }
+    .title h1{
+        font-size: 17px;
+        font-weight: 500;
+    }
+    .title p{
+        font-weight:100;
+        padding-top: 5px;
+        font-size: 9px;
+    }
+    .title a{
+        padding-left: 9px;
+        padding-right: 9px;
+        padding-bottom: 4px;
+        padding-top: 4px;
+        font-size: 7px;
+    }
+    .kompaniy-title{
+        text-align: center;
+        padding-top: 5px;
+        padding-left: 30px;
+    }
+    .kompaniy-title h1{
+        font-size: 19px;
+    }
+    .kompaniy-title p{
+        padding-top: 10px;
+        font-size: 13px;
+    }
+    .kompaniy-title a{
+        font-size: 8px;
+    }
+    .kompaniy-img-425 {
+        padding-bottom: 20px;
+        display:grid;
+    }
+    .kompaniy-img-425 img{
+        margin-left:40px ;
+        width: 250px;
+        border-radius: 10px;
+    }
+    
+    .icon{
+        padding-left: 30px;
+        gap: 20px;
+        padding-top: 60px;
+    }
+    .icon img{
+        width: 23px;
+    }
+    .icon h4{
+        padding-top: 9px;
+        font-size: 13px;
+    }
+    .icon p{
+        padding-top: 10px;
+        font-size: 8px;
+    }
+    .text-center h1{
+        font-size: 25px;
+    }
+    .text-center p{
+        font-size: 11px;
+    }
+    #document{
+        height: 65vh;
+    }
+    .document-icon{
+        padding-top: 30px;
+    }
+    .document-icon img{
+        width: 45px;
+    }
+    .document-icon-text p{
+        font-size: 10px;
+    }
+    .uslugi{
+        padding-top: 15px;
+        height: 65vh;
+    }
+    .uslugi h2{
+        font-size: 20px;
+    }
+    .uslugi-text {
+        font-size: 9px;
+        gap: 60px;
+        padding-top: 20px;
+    }
+    
+    .uslugi-p{
+        padding-top: 10px;
+        width: 250px;
+        border-radius: 20px;
+    }
+    
+    .footer-foot{
+        height: 460px;
+    }
+    .footer{
+        display: block;
+        padding-left: 60px;
+    }
+    .footer-menu{
+        display: flex;
+        gap: 30px;
+    }
+    .footer-menu-logo {
+        gap: 20px;
+    }
+}
